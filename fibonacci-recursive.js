@@ -18,11 +18,16 @@ console.log(fibo);
 // }
 // console.log(fibo(6));
 
-function fibo(n){
-    const fibonacci = [0, 1];
-    for(let i = 2; i <= n; i++){
-        fibonacci.push(fibonacci[i -1] + fibonacci[i - 2]);
+function fibo(i){
+    if(i == 0){
+        return [0];
     }
+    if(i == 1){
+        return [0, 1];
+    }
+    const fibonacci = fibo(i - 1);
+
+    fibonacci[i] = fibonacci[i - 1] + fibonacci[i -2];
     return fibonacci;
 }
 console.log(fibo(6));
