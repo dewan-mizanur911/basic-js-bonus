@@ -1,3 +1,5 @@
+// 6 + 5 + 4 + 3 + 2 + 1 ber kora lagbe
+
 /*
 let sum = 0;
 for(let i = 1; i <= 6; i++){
